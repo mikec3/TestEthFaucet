@@ -112,7 +112,7 @@ return (
 </div>
 <div>
   <p> Donate to the creator: 0x07Fa7FBff22d6bBcC2f38A29F07B60ef5F4916b3 </p>
-  <a href='https://www.github.com'>GitHub</a>
+  <a href='https://github.com/mikec3/TestEthFaucet'>GitHub</a>
 </div>
 </div>
   );
