@@ -1,0 +1,9 @@
+.DonateCard {
+	/*border: 1px solid black;*/
+	max-width: 20vh;
+	text-align: center;
+}
+
+button {
+	margin-top: 10vh;
+}

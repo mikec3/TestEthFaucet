@@ -1,0 +1,10 @@
+.AttackImage {
+	height: 20vh;
+	/*border: 1px solid black;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ImageWrapper {
+	margin:auto;
+}
