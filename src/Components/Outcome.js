@@ -1,6 +1,7 @@
 import Rock_img from './Rock_img.png'
 import Paper_img from './Paper_img.png'
 import Scissors_img from './Scissors_img.png'
+import Rock_img_holder from './Rock_img_holder.png'
 import './Outcome.css'
 
 function Outcome(props) {
@@ -26,6 +27,7 @@ function ReturnImageToDisplay(num){
   	imageToDisplay = Scissors_img;
   	break;
   	default:
+  	imageToDisplay = Rock_img_holder;
   	break;
   }
   return imageToDisplay;

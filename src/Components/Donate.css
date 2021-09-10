@@ -1,9 +1,25 @@
 .DonateCard {
 	/*border: 1px solid black;*/
-	max-width: 20vh;
 	text-align: center;
+	max-width: 8em;
 }
 
 button {
-	margin-top: 10vh;
+	margin-top: 1em;
+}
+
+@media (width < 500px) {
+.DonateCard {
+	display: flex;
+	text-align: center;
+	max-width: 100%;
+	justify-content: flex-end;
+
+	}
+
+button {
+	max-width: 35%;
+	margin-left: 1em;
+	margin-right: 1em;
+}
 }

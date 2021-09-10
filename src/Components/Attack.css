@@ -1,5 +1,5 @@
 .AttackImage {
-	height: 20vh;
+	height: 10em;
 	/*border: 1px solid black;*/
 	margin-left: auto;
 	margin-right: auto;
@@ -7,4 +7,10 @@
 
 .ImageWrapper {
 	margin:auto;
+}
+
+@media (width < 500px) {
+.AttackImage {
+	height: 7em;
+}
 }

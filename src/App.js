@@ -120,8 +120,7 @@ function App() {
 
 return (
 <div>
-<div className='Title'> <h2> Play Rock Paper Scissors for Rinkby Test Eth! </h2> 
-  <p> Win to receive test Eth! </p>
+<div className='Title'> <h2> Play Rock Paper Scissors for Ropsten Test Eth! </h2> 
   </div>
 <div className='GameWrapper'>
   <Donate contractBalance={contractBalance} {...defaultAttackProps}/>
