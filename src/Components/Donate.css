@@ -8,7 +8,7 @@ button {
 	margin-top: 1em;
 }
 
-@media (width < 500px) {
+@media (width < 1000px) {
 .DonateCard {
 	display: flex;
 	text-align: center;

@@ -19,8 +19,10 @@ function Donate(props) {
 	
 	return (
 	<div className='DonateCard'> 
+	<div className='Balance'>
 	<p> Contract Balance: </p>
 	<p>{props.contractBalance}</p>
+	</div>
 
 	<button onClick={SendDonation}> Donate 1 test Eth to the faucet </button>
 	<p>{donationResult}</p>

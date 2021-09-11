@@ -33,7 +33,7 @@ img {
 	padding: 7em;
 }
 
-@media (width < 500px) {
+@media (width < 1000px) {
 .OutcomeCard{
 	padding-top: 1em;
 	/*border: 1px solid red;*/

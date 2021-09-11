@@ -49,8 +49,8 @@ contract Rock_Paper_Scissors {
     
     function sendEthToWinner() private {
         // require this contract to have enough to send out + gas
-        require(address(this).balance >=1100000);
-        msg.sender.transfer(1000000);
+        require(address(this).balance >=1100000000000000);
+        msg.sender.transfer(1000000000000000);
     }
     
     function donate() public payable {

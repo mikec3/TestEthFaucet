@@ -9,7 +9,7 @@
 	margin:auto;
 }
 
-@media (width < 500px) {
+@media (width < 1000px) {
 .AttackImage {
 	height: 7em;
 }

@@ -9,7 +9,7 @@ function Outcome(props) {
 // if the player wins let them know they are getting test gwei sent to them
 let winMessage;
 if (props.outcome === 'Player Wins') {
-	winMessage = 'Sending you 1M test gwei!';
+	winMessage = 'Sending you 1M test Gwei!';
 }
 
 

@@ -10,7 +10,7 @@ import contractABI from './ABI.json'  // Solidity contract ABI
 
 function App() {
 
-  const contractAddress = '0x67d4cA80283f810b3888BA47C4aEEC002dbD9313';
+  const contractAddress = '0xAaCe778C595A5b4A5b6577CbC121536aC85704c3';
 
   // declare hook for setting the defaultAccount. App will re-render after calling setDefaultAccount(myNewDefaultAccount)
   const [defaultAccount, setDefaultAccount] = useState(null);
