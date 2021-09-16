@@ -6,10 +6,11 @@ import './Attack.css'
 function Attack(props) {
 
 	function AttackClickHandler(attack){
+    alert('Great Choice! Next you will confirm your MetaMask transation, then wait for block confirmation to see result');
     props.contract.methods.play(attack).send({from: props.defaultAccount})
     .on('error', function(error){
     	//console.log(error);
-    	alert('You had a winning hand, but I think the faucet is empty!');
+    	alert('Either the faucet is empty, or you aborted the transaction!');
     })
     .on('receipt', function(receipt){
     	//console.log(receipt);

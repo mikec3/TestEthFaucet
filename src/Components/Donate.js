@@ -20,7 +20,7 @@ function Donate(props) {
 	return (
 	<div className='DonateCard'> 
 	<div className='Balance'>
-	<p> Contract Balance: </p>
+	<p> Ropsten Eth Balance: </p>
 	<p>{props.contractBalance}</p>
 	</div>
 

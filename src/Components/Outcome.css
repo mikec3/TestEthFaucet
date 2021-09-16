@@ -8,6 +8,7 @@ img {
 .OutcomeCard {
   margin:auto;
   /*border:1px solid black;*/
+  /*border-top: .05em solid #333;*/
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -25,6 +26,14 @@ img {
 	text-align: center;
 }
 
+.OutcomeHolder {
+	border: .05em solid #333;
+	border-radius: .5em;
+	min-width: 7em;
+	min-height: 5em;
+	background-color: white;
+}
+
 
 .Hand {
 	/*border: 1px solid black;*/
@@ -33,10 +42,19 @@ img {
 	padding: 7em;
 }
 
+.HandHolder {
+	border: .05em solid #333;
+	border-radius: 1em;
+	background-color: white;
+	min-width: 7em;
+	min-height: 7em;
+}
+
 @media (width < 1000px) {
 .OutcomeCard{
 	padding-top: 1em;
 	/*border: 1px solid red;*/
+	border-bottom: .05em solid #333;
 	max-width: 100%;
 	justify-content: center;
 }

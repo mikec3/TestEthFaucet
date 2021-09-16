@@ -11,7 +11,7 @@ import contractABI from './ABI.json'  // Solidity contract ABI
 function App() {
 
   // ROPSTEN ADDRESS = '0x266B6F8C7C823187d20FEBD47F684F348843501a'
-  const contractAddress = '0x266B6F8C7C823187d20FEBD47F684F348843501a';
+  const contractAddress = '0x9F0a8af79eFE24c50fE4E6aF2308F928A75fa617';
 
   // declare hook for setting the defaultAccount. App will re-render after calling setDefaultAccount(myNewDefaultAccount)
   const [defaultAccount, setDefaultAccount] = useState(null);
@@ -46,30 +46,6 @@ function App() {
     } else {
       alert("You need to install MetaMask to interact with this app");
     }
-
-  //   let web3;
-
-  //   if(typeof web3 !== 'undefined'){
-  //     web3 = new Web3(Web3.givenProvider);
-  //     setWEB3(web3);
-  //   } else {
-  //     // IMPORTANT!!
-  //     // USED WebsocketProvider instead of httpProvider due to event listening only happening on ws
-  //     web3 = new Web3(new Web3.providers.WebsocketProvider('ws://localhost:8545'));
-  //     setWEB3(web3);
-  //   }
-
-  //   web3.eth.getBalance(contractAddress)
-  //   .then(function(result){
-  //     setContractBalance(web3.utils.fromWei(result));
-  //   });
-
-  //   web3.eth.getAccounts()
-  //   .then(function(result){
-  //     setDefaultAccount(result[0]);
-  //   });
-
-  //   setRPSContract(new web3.eth.Contract(contractABI, contractAddress));
   }
 
   // initialize web3 and provider connection upon app load
@@ -119,9 +95,12 @@ function App() {
     defaultAccount: defaultAccount
   }
 
+ 
+
 return (
 <div>
-<div className='Title'> <h2> Play Rock Paper Scissors for Ropsten Test Eth! </h2> 
+<div className='Title'> <h1> Play </h1>
+                        <h2> [Rock, Paper, Scissors] </h2> 
   </div>
 <div className='GameWrapper'>
   <Donate contractBalance={contractBalance} {...defaultAttackProps}/>
@@ -129,8 +108,8 @@ return (
   <AttackCard {...defaultAttackProps}/>
 </div>
 <div>
+<p><a href='https://github.com/mikec3/TestEthFaucet'>GitHub</a></p>
   <p> Donate to the creator: 0x07Fa7FBff22d6bBcC2f38A29F07B60ef5F4916b3 </p>
-  <a href='https://github.com/mikec3/TestEthFaucet'>GitHub</a>
 </div>
 </div>
   );

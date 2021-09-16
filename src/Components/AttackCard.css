@@ -1,5 +1,8 @@
 .AttackCard {
-	/*border: 1px solid black;*/
+	border-left: .05em solid #333;
+	background-color: white;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

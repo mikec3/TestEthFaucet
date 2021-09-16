@@ -27,7 +27,7 @@ function ReturnImageToDisplay(num){
   	imageToDisplay = Scissors_img;
   	break;
   	default:
-  	imageToDisplay = Rock_img_holder;
+  	//imageToDisplay = Rock_img_holder;
   	break;
   }
   return imageToDisplay;
@@ -37,14 +37,18 @@ function ReturnImageToDisplay(num){
 		<div className='OutcomeCard'>
 		<div className='Hand'>
 		<h3> Player </h3>
+		<div className='HandHolder'>
 		<img src={ReturnImageToDisplay(props.playerAttack)}/>
 		</div>
+		</div>
 		<div className='Outcome'> <h3>Match Outcome </h3>
-		<div> <h3>{props.outcome}</h3> <p> {winMessage}</p> </div>
+		<div className='OutcomeHolder'> <h3>{props.outcome}</h3> <p> {winMessage}</p> </div>
 		</div>
 		<div className='Hand'>
 		<h3> Eth VM </h3>
+		<div className='HandHolder'>
 		<img src={ReturnImageToDisplay(props.computerAttack)}/>
+		</div>
 		</div>
 		</div>
 		);
