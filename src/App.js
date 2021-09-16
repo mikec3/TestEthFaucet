@@ -11,7 +11,8 @@ import contractABI from './ABI.json'  // Solidity contract ABI
 function App() {
 
   // ROPSTEN ADDRESS = '0x266B6F8C7C823187d20FEBD47F684F348843501a'
-  const contractAddress = '0x9F0a8af79eFE24c50fE4E6aF2308F928A75fa617';
+  // GANACHE-CLI address = '0x9F0a8af79eFE24c50fE4E6aF2308F928A75fa617'
+  const contractAddress = '0x266B6F8C7C823187d20FEBD47F684F348843501a';
 
   // declare hook for setting the defaultAccount. App will re-render after calling setDefaultAccount(myNewDefaultAccount)
   const [defaultAccount, setDefaultAccount] = useState(null);
