@@ -6,15 +6,20 @@ import './Attack.css'
 function Attack(props) {
 
 	function AttackClickHandler(attack){
-    alert('Great Choice! Next you will confirm your MetaMask transation, then wait for block confirmation to see result');
-    props.contract.methods.play(attack).send({from: props.defaultAccount})
-    .on('error', function(error){
+    // Only execute button logic if account is connected
+    if (props.defaultAccount != null) {
+      alert('Great Choice! Next you will confirm your MetaMask transation, then wait for block confirmation to see result');
+      props.contract.methods.play(attack).send({from: props.defaultAccount})
+      .on('error', function(error){
     	//console.log(error);
-    	alert('Either the faucet is empty, or you aborted the transaction!');
-    })
-    .on('receipt', function(receipt){
-    	//console.log(receipt);
-    })
+    	 alert('Either the faucet is empty, or you aborted the transaction!');
+      })
+      .on('receipt', function(receipt){
+      	//console.log(receipt);
+      });
+    } else {
+      alert('Connect wallet to play!');
+    }
   }
 
   // Set the image for the 'button' based on the attack number

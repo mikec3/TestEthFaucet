@@ -24,6 +24,8 @@ function App() {
 
   const [RPSContract, setRPSContract] = useState(null);
 
+  const [connectionInd, setConnectionInd] = useState("Connect Wallet");
+
   // initialize and set state of web3 and contract for uses in app
   // initialize and set state of contract balance and default account
   function loadAccount(){
@@ -35,6 +37,9 @@ function App() {
       .then(function(result){
         console.log(result.result[0]);
         setDefaultAccount(result.result[0]);
+
+        // connection successful, connect wallet button will now display "Connected"
+        setConnectionInd("Connected");
 
     window.web3.eth.getBalance(contractAddress)
     .then(function(result){
@@ -51,7 +56,7 @@ function App() {
 
   // initialize web3 and provider connection upon app load
   useEffect(() => {
-    loadAccount();
+    //loadAccount();
   }, []);
 
 // Call when RPSContract is updated
@@ -100,8 +105,8 @@ function App() {
 
 return (
 <div>
-<div className='Title'> <h1> Play </h1>
-                        <h2> [Rock, Paper, Scissors] </h2> 
+<div className='Title'> <h1> Play </h1> 
+                        <h2> [Rock, Paper, Scissors] <button onClick={loadAccount}> {connectionInd} </button></h2> 
   </div>
 <div className='GameWrapper'>
   <Donate contractBalance={contractBalance} {...defaultAttackProps}/>
