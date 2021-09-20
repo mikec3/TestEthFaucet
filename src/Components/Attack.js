@@ -22,6 +22,11 @@ function Attack(props) {
     }
   }
 
+  // passes which hand was selected up to parent
+  const attackSelectedHandler = (event) => {
+    props.onAttackSelectedHandler(event);
+  }
+
   // Set the image for the 'button' based on the attack number
   // sets altText for alt image tags
   let imageToDisplay;
@@ -45,7 +50,9 @@ function Attack(props) {
 	
 	return (
 	<div className='ImageWrapper'>
-	<img className='AttackImage' src={imageToDisplay} onClick={e => {AttackClickHandler(props.attackNum)}} alt={altText}/>
+	<img className='AttackImage' src={imageToDisplay} onClick={e => {
+    AttackClickHandler(props.attackNum); 
+    attackSelectedHandler(props.attackNum)}} alt={altText}/>
 	</div>
 	);
 }

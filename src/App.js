@@ -101,7 +101,13 @@ function App() {
     defaultAccount: defaultAccount
   }
 
- 
+  // recieves which attack was selected, allows for update on screen while waiting for block mined
+ const attackSelectedHandler = (event) => {
+  setMatchOutcome('Waiting...')
+  setPlayerAttack(event.toString());
+  // loading icon in computer attack img
+  setComputerAttack('3');
+ }
 
 return (
 <div>
@@ -111,7 +117,7 @@ return (
 <div className='GameWrapper'>
   <Donate contractBalance={contractBalance} {...defaultAttackProps}/>
   <OutcomeCard outcome = {matchOutcome} playerAttack={playerAttack} computerAttack={computerAttack} />
-  <AttackCard {...defaultAttackProps}/>
+  <AttackCard {...defaultAttackProps} onAttackSelectedHandler={attackSelectedHandler}/>
 </div>
 <div>
 <p><a href='https://github.com/mikec3/TestEthFaucet'>GitHub</a></p>
