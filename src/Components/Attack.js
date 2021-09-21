@@ -8,7 +8,6 @@ function Attack(props) {
 	function AttackClickHandler(attack){
     // Only execute button logic if account is connected
     if (props.defaultAccount != null) {
-      alert('Great Choice! Next you will confirm your MetaMask transation, then wait for block confirmation to see result');
       props.contract.methods.play(attack).send({from: props.defaultAccount})
       .on('error', function(error){
     	//console.log(error);
