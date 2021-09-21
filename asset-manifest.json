@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TestEthFaucet/static/css/main.a72f9137.chunk.css",
-    "main.js": "/TestEthFaucet/static/js/main.f4756485.chunk.js",
-    "main.js.map": "/TestEthFaucet/static/js/main.f4756485.chunk.js.map",
+    "main.js": "/TestEthFaucet/static/js/main.ba234ab5.chunk.js",
+    "main.js.map": "/TestEthFaucet/static/js/main.ba234ab5.chunk.js.map",
     "runtime-main.js": "/TestEthFaucet/static/js/runtime-main.76445945.js",
     "runtime-main.js.map": "/TestEthFaucet/static/js/runtime-main.76445945.js.map",
     "static/js/2.4085517f.chunk.js": "/TestEthFaucet/static/js/2.4085517f.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.76445945.js",
     "static/js/2.4085517f.chunk.js",
     "static/css/main.a72f9137.chunk.css",
-    "static/js/main.f4756485.chunk.js"
+    "static/js/main.ba234ab5.chunk.js"
   ]
 }
